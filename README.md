@@ -54,48 +54,27 @@ Core Stack:
 
 ### Data Platform
 
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud)
-
+![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud)
 ![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?style=for-the-badge&logo=googlebigquery)
-
 ![Dataflow](https://img.shields.io/badge/Dataflow-0F9D58?style=for-the-badge)
-
-![Workflows](https://img.shields.io/badge/GCP_Workflows-4285F4?style=for-the-badge)
-
+![Workflows](https://img.shields.io/badge/Workflows-4285F4?style=for-the-badge)
 ![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt)
 
----
-
-### AI Engineering
+### AI & Automation
 
 ![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=for-the-badge)
+![Google ADK](https://img.shields.io/badge/Google_ADK-5B5FC7?style=for-the-badge)
+![AIOps](https://img.shields.io/badge/AIOps-0EA5E9?style=for-the-badge)
 
-![Google ADK](https://img.shields.io/badge/Google_ADK-Agentic_Framework-5B5FC7?style=for-the-badge)
-
-![AIOps](https://img.shields.io/badge/AI_OPS-0EA5E9?style=for-the-badge)
-
----
-
-### DevOps & Delivery
+### DevOps & Engineering
 
 ![DevOps](https://img.shields.io/badge/DevOps-2563EB?style=for-the-badge)
-
-![CI/CD](https://img.shields.io/badge/CI%2FCD-22C55E?style=for-the-badge)
-
+![CI/CD](https://img.shields.io/badge/CI/CD-22C55E?style=for-the-badge)
 ![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform)
-
-![Cloud Build](https://img.shields.io/badge/Cloud_Build-4285F4?style=for-the-badge)
-
----
-
-### Engineering
-
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python)
-
 ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge)
 
 </div>
-
 ---
 
 # 📈 Engineering Analytics
@@ -189,25 +168,28 @@ DevOps • CI/CD • Reliability
 
 ---
 
-# ⚡ Current Architecture
+# 🐍 Contribution Activity
+
+<div align="center">
+
+<img width="100%"
+src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg"/>
+
+</div>
+
+---
+
+# ⚡ Current Status
+
+<div align="center">
 
 ```text
-INGEST
- ↓
-TRANSFORM (dbt)
- ↓
-ORCHESTRATE (Workflows)
- ↓
-MODEL (Vertex AI)
- ↓
-AGENTS (Google ADK)
- ↓
-DEPLOY (CI/CD)
- ↓
-OBSERVE (AIOps)
- ↓
-SCALE
+BUILD → AUTOMATE → SCALE → IMPACT
 ```
+
+☁️ Building modern cloud platforms.
+
+</div>
 
 ---
 
