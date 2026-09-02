@@ -1,0 +1,31 @@
+name: Auto Merge Pull Request
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+      - labeled
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  automerge:
+    name: Auto Merge PR
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - name: Attempt Auto-Merge
+        run: |
+          PR_URL="${{ github.event.pull_request.html_url }}"
+          echo "Processing PR: $PR_URL"
+          
+          # Try enabling GitHub native auto-merge first; fallback to direct merge
+          gh pr merge "$PR_URL" --auto --merge --delete-branch || \
+          gh pr merge "$PR_URL" --merge --delete-branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
